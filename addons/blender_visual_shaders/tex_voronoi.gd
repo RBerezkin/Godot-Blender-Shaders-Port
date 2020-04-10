@@ -133,16 +133,18 @@ func _get_global_code(mode):
 		
 		
 		// F1
-		void node_tex_voronoi_f1_3d (vec3 param_coord,
-									float param_scale,
-									float param_smoothness,
-									float param_exponent,
-									float param_randomness,
-									float param_metric,
-									out float outDistance,
-									out vec3 outColor,
-									out vec3 outPosition,
-									out float outRadius) {
+		void node_tex_voronoi_f1_3d (
+			vec3 param_coord,
+			float param_scale,
+			float param_smoothness,
+			float param_exponent,
+			float param_randomness,
+			float param_metric,
+			out float outDistance,
+			out vec3 outColor,
+			out vec3 outPosition,
+			out float outRadius
+		) {
 			param_randomness = clamp(param_randomness, 0.0, 1.0);
 			
 			vec3 scaledCoord = param_coord * param_scale;
@@ -175,16 +177,18 @@ func _get_global_code(mode):
 		
 		
 		// F2
-		void node_tex_voronoi_f2_3d (vec3 param_coord,
-									float param_scale,
-									float param_smoothness,
-									float param_exponent,
-									float param_randomness,
-									float param_metric,
-									out float outDistance,
-									out vec3 outColor,
-									out vec3 outPosition,
-									out float outRadius) {
+		void node_tex_voronoi_f2_3d (
+			vec3 param_coord,
+			float param_scale,
+			float param_smoothness,
+			float param_exponent,
+			float param_randomness,
+			float param_metric,
+			out float outDistance,
+			out vec3 outColor,
+			out vec3 outPosition,
+			out float outRadius
+		) {
 			param_randomness = clamp(param_randomness, 0.0, 1.0);
 			
 			vec3 scaledCoord = param_coord * param_scale;
@@ -230,16 +234,18 @@ func _get_global_code(mode):
 		
 		
 		// Smooth F1
-		void node_tex_voronoi_smooth_f1_3d (vec3 param_coord,
-											float param_scale,
-											float param_smoothness,
-											float param_exponent,
-											float param_randomness,
-											float param_metric,
-											out float outDistance,
-											out vec3 outColor,
-											out vec3 outPosition,
-											out float outRadius) {
+		void node_tex_voronoi_smooth_f1_3d (
+			vec3 param_coord,
+			float param_scale,
+			float param_smoothness,
+			float param_exponent,
+			float param_randomness,
+			float param_metric,
+			out float outDistance,
+			out vec3 outColor,
+			out vec3 outPosition,
+			out float outRadius
+		) {
 			param_randomness = clamp(param_randomness, 0.0, 1.0);
 			param_smoothness = clamp(param_smoothness / 2.0, 0, 0.5);
 			
@@ -278,16 +284,18 @@ func _get_global_code(mode):
 		
 		
 		// Distance to edge
-		void node_tex_voronoi_distance_to_edge_3d (vec3 param_coord,
-													float param_scale,
-													float param_smoothness,
-													float param_exponent,
-													float param_randomness,
-													float param_metric,
-													out float outDistance,
-													out vec3 outColor,
-													out vec3 outPosition,
-													out float outRadius) {
+		void node_tex_voronoi_distance_to_edge_3d (
+			vec3 param_coord,
+			float param_scale,
+			float param_smoothness,
+			float param_exponent,
+			float param_randomness,
+			float param_metric,
+			out float outDistance,
+			out vec3 outColor,
+			out vec3 outPosition,
+			out float outRadius
+		) {
 			param_randomness = clamp(param_randomness, 0.0, 1.0);
 			
 			vec3 scaledCoord = param_coord * param_scale;
@@ -334,16 +342,18 @@ func _get_global_code(mode):
 		
 		
 		// N-Sphere radius
-		void node_tex_voronoi_n_sphere_radius_3d (vec3 param_coord,
-												float param_scale,
-												float param_smoothness,
-												float param_exponent,
-												float param_randomness,
-												float param_metric,
-												out float outDistance,
-												out vec3 outColor,
-												out vec3 outPosition,
-												out float outRadius) {
+		void node_tex_voronoi_n_sphere_radius_3d (
+			vec3 param_coord,
+			float param_scale,
+			float param_smoothness,
+			float param_exponent,
+			float param_randomness,
+			float param_metric,
+			out float outDistance,
+			out vec3 outColor,
+			out vec3 outPosition,
+			out float outRadius
+		) {
 			param_randomness = clamp(param_randomness, 0.0, 1.0);
 			
 			vec3 scaledCoord = param_coord * param_scale;
