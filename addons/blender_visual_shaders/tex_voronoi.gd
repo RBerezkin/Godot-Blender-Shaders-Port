@@ -7,7 +7,7 @@ func _init():
 	set_default_input_values([
 		1, 0.0,
 		2, 0.0,
-		3, 5.0,
+		3, 3.0,
 		4, 1.0,
 		5, 0.5,
 		6, 1.0
@@ -15,11 +15,15 @@ func _init():
 
 
 func _get_name():
-	return "BlenderTexVoronoi"
+	return "BlenderVoronoiTexture"
 
 
 func _get_category():
 	return "BlenderNodes"
+
+
+func _get_subcategory():
+	return "Texture"
 
 
 func _get_description():
