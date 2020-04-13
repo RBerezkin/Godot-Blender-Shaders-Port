@@ -9,8 +9,7 @@ func _init():
 		1, 1.0,
 		2, 1.0,
 		3, 1.0,
-		4, Vector3.ZERO,
-		5, Vector3.ZERO
+		4, Vector3.ZERO
 	])
 
 
@@ -134,7 +133,6 @@ func _get_code(input_vars, output_vars, mode, type):
 		float parm_strength = %s;
 		float parm_distance = %s;
 		float parm_height = %s;
-		//vec3 parm_normal = mat3(CAMERA_MATRIX) * s;
 		vec3 parm_normal = %s;
 		
 		node_bump(
